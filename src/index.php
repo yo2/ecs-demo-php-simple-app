@@ -24,6 +24,7 @@
                         $myfile = fopen("/var/www/my-vol/date", "r") or die("");
                         echo fread($myfile,filesize("/var/www/my-vol/date"));
                         fclose($myfile);
+                        echo "   <a href=\\"http://github.com/awslabs/ecs-refarch-continuous-deployment\\">Open AwsLabs repo</a>";
                 ?>
 
             </div>
