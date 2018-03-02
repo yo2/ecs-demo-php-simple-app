@@ -7,7 +7,7 @@
         <title>Pimple PHP App</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <style>body {margin-top: 40px; background-color: #333;}</style>
+        <style>body {margin-top: 40px; background-color: #4286f4;}</style>
         <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
         <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     </head>
@@ -25,7 +25,8 @@
                         echo fread($myfile,filesize("/var/www/my-vol/date"));
                         fclose($myfile);
                 ?>
-                <p><a href="https://github.com/awslabs/ecs-refarch-continuous-deployment">Go to AwsLabs Github</a></p>
+                <p><a href="https://github.com/awslabs/ecs-refarch-continuous-deployment">Go to AwsLabs ecs pipeline</a></p>
+                <p><a href="https://github.com/aws-samples/ecs-demo-php-simple-app">Go to AwsLabs Php sample app</a></p>
             </div>
         </div>
 
