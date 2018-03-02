@@ -32,6 +32,7 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
+        <p><a href="https://github.com/awslabs/ecs-refarch-continuous-deployment">Go to AwsLabs Github</a></p>
     </body>
 
 </html>
