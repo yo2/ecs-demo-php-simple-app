@@ -15,7 +15,7 @@
     <body>
         <div class="container">
             <div class="hero-unit">
-                <h1>Simple PHP App</h1>
+                <h1>Simple PHP App Version 2</h1>
                 <h2>Congratulations</h2>
                 <h2>THIS IS VERSION 1.3</h2>
                 <p>Your PHP application is now running on a container in Amazon ECS.</p>
