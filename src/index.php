@@ -26,8 +26,8 @@
                         echo fread($myfile,filesize("/var/www/my-vol/date"));
                         fclose($myfile);
                 ?>
-                <p><a href="https://github.com/awslabs/ecs-refarch-continuous-deployment">Go to AwsLabs ecs pipeline</a></p>
-                <p><a href="https://github.com/aws-samples/ecs-demo-php-simple-app">Go to AwsLabs Php sample app</a></p>
+                <h2><a href="https://github.com/awslabs/ecs-refarch-continuous-deployment">Go to AwsLabs ecs pipeline</a></h2>
+                <h2><a href="https://github.com/aws-samples/ecs-demo-php-simple-app">Go to AwsLabs Php sample app</a></h2>
             </div>
         </div>
 
