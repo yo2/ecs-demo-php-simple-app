@@ -28,6 +28,7 @@
                 <h2><a href="https://github.com/awslabs/ecs-refarch-continuous-deployment">Go to AwsLabs ecs pipeline</a></h2>
                 <h2><a href="https://github.com/aws-samples/ecs-demo-php-simple-app">Go to AwsLabs Php sample app</a></h2>
                 <h2><a href="https://polarseven.com/devops-introduction">PolarSeven DevOps Webinar</a></h2>
+                <h2><a href="https://polarseven.com/kubernetes-deep-dive-demo">PolarSeven Kubernetes Webinar</a></h2>
                 <h2><a href="https://aws.amazon.com/new/">AWS Whats New</a></h2>
 
             </div>
