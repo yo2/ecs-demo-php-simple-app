@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "Createing the image" >> /var/log/kops.log
