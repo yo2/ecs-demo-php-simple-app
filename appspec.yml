@@ -1,0 +1,17 @@
+version: 0.0
+os: linux
+files:
+  - source: /src
+    destination: /opt/k8s/codedeploy/src
+  - source: /scripts
+    destination: //opt/k8s/codedeploy/scripts
+  - source: /Dockerfile
+    destination: //opt/k8s/codedeploy/
+hooks:
+  BeforeInstall:
+    - location: scripts/build_image
+      timeout: 300
+      runas: root
+    - location: scripts/push_image
+      timeout: 300
+      runas: root
