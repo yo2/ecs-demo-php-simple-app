@@ -1,2 +1,9 @@
 #!/bin/bash
 echo "Createing the image" >> /var/log/kops.log
+REPOSITORY_URI=`cat /opt/k8s/ecr.txt`
+$(aws ecr get-login --no-include-email)
+TAG=`date "+%d%H%M%S"`
+IMAGE_URI="${REPOSITORY_URI}:${TAG}"
+docker build --tag "$IMAGE_URI" .
+docker push "$IMAGE_URI"
+kubectl set image deployment/website1 website1="$IMAGE_URI"
