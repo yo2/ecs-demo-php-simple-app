@@ -8,7 +8,7 @@ files:
   - source: /Dockerfile
     destination: //opt/k8s/codedeploy/
 hooks:
-  BeforeInstall:
+   AfterInstall:
     - location: scripts/build_image
       timeout: 300
       runas: root
