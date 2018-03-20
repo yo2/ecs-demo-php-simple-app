@@ -6,12 +6,9 @@ files:
   - source: /scripts
     destination: //opt/k8s/codedeploy/scripts
   - source: /Dockerfile
-    destination: //opt/k8s/codedeploy/
+    destination: /opt/k8s/codedeploy/
 hooks:
   BeforeInstall:
     - location: scripts/build_image
-      timeout: 300
-      runas: root
-    - location: scripts/push_image
       timeout: 300
       runas: root
