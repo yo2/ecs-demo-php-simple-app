@@ -4,14 +4,14 @@ files:
   - source: /src
     destination: /opt/k8s/codedeploy/src
   - source: /scripts
-    destination: /opt/k8s/codedeploy/scripts
+    destination: /opt/k8s/codedeploy
   - source: /Dockerfile
     destination: /opt/k8s/codedeploy/
 hooks:
    AfterInstall:
-    - location: scripts/change_permissions.sh
+    - location: change_permissions.sh
       timeout: 300
       runas: root
-    - location: scripts/build_image.sh
+    - location: build_image.sh
       timeout: 300
       runas: root
