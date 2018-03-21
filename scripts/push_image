@@ -1,2 +1,0 @@
-#!/bin/bash
-echo "pushing image to ECR............" >>/var/log/kops.log

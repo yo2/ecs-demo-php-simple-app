@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Createing the image" >> /var/log/kops.log
+echo "Creating the image" >> /var/log/kops.log
 REPOSITORY_URI=`cat /opt/k8s/ecr.txt`
 REPO=$(echo "${REPOSITORY_URI}" |awk -F"/" '{ print $2 }')
 
