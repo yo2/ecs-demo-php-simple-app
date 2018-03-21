@@ -8,7 +8,7 @@ $(aws ecr get-login --no-include-email --region ap-southeast-2)
 TAG=`date "+%d%H%M%S"`
 IMAGE_URI="${REPOSITORY_URI}:${TAG}"
 echo "$IMAGE_URI" >> /var/log/kops.log
-echo $(grep \"background-color\" /opt/k8s/src/index.php) >> /var/log/kops.log
+echo $(grep "background-color" /opt/k8s/src/index.php) >> /var/log/kops.log
 
 echo $(docker build -t "$REPO" .) >> /var/log/kops.log
 echo $(docker tag $REPO "$IMAGE_URI") >> /var/log/kops.log
