@@ -9,6 +9,6 @@ files:
     destination: /opt/k8s/codedeploy/scripts
 hooks:
    AfterInstall:
-    - location: build_image.sh
+    - location: scripts/build_image.sh
       timeout: 300
       runas: root
