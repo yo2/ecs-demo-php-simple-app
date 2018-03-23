@@ -4,9 +4,9 @@ files:
   - source: /src
     destination: /opt/k8s/codedeploy/src
   - source: /scripts
-    destination: /opt/k8s/codedeploy
+    destination: /opt/k8s/codedeploy/scripts
   - source: /Dockerfile
-    destination: /opt/k8s/codedeploy
+    destination: /opt/k8s/codedeploy/scripts
 hooks:
    AfterInstall:
     - location: build_image.sh
