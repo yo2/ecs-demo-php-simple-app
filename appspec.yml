@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /src
-    destination: /opt/k8s/codedeploy/src
+    destination: /opt/k8s/codedeploy/scripts/src
   - source: /scripts
     destination: /opt/k8s/codedeploy/scripts
   - source: /Dockerfile
