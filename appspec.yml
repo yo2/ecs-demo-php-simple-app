@@ -8,7 +8,7 @@ files:
   - source: /Dockerfile
     destination: /opt/k8s/codedeploy/scripts
 permissions:
-  - object: /opt/k8s/codedeploy/scripts/src
+  - object: /opt/k8s/codedeploy/scripts
     pattern: "*.sh"
     owner: root
     group: root
