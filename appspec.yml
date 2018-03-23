@@ -7,6 +7,14 @@ files:
     destination: /opt/k8s/codedeploy/scripts
   - source: /Dockerfile
     destination: /opt/k8s/codedeploy/scripts
+permissions:
+  - object: /opt/k8s/codedeploy/scripts/src
+    pattern: "*.sh"
+    owner: root
+    group: root
+    mode: 755
+    type:
+      - file
 hooks:
    AfterInstall:
     - location: scripts/build_image.sh
