@@ -10,7 +10,7 @@ IMAGE_URI="${REPOSITORY_URI}:${TAG}"
 echo "$IMAGE_URI" >> /var/log/kops.log
 echo $(grep "background-color" /opt/k8s/codedeploy/src/index.php) >> /var/log/kops.log
 
-echo $(docker build -t "$REPO" .) &>> /var/log/kops.log
-echo $(docker tag $REPO "$IMAGE_URI") &>> /var/log/kops.log
-echo $(docker push "$IMAGE_URI")  &>> /var/log/kops.log
-echo $(kubectl set image deployment/website1 website1="$IMAGE_URI") &>> /var/log/kops.log
+echo "$(docker build -t "$REPO" .)" &>> /var/log/kops.log
+echo "$(docker tag $REPO "$IMAGE_URI")" &>> /var/log/kops.log
+echo "$(docker push "$IMAGE_URI")"  &>> /var/log/kops.log
+echo "$(kubectl set image deployment/website1 website1=\"$IMAGE_URI\")" &>> /var/log/kops.log
