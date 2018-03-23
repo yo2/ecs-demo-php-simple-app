@@ -6,12 +6,9 @@ files:
   - source: /scripts
     destination: /opt/k8s/codedeploy
   - source: /Dockerfile
-    destination: /opt/k8s/codedeploy/
+    destination: /opt/k8s/codedeploy
 hooks:
    AfterInstall:
-    - location: change_permissions.sh
-      timeout: 300
-      runas: root
     - location: build_image.sh
       timeout: 300
       runas: root
