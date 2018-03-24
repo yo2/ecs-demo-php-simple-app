@@ -16,7 +16,7 @@ permissions:
     type:
       - file
 hooks:
-   AplicationStart:
-    - location: scripts/build_image.sh
+   AfterInstall:
+    - location: scripts/push_image.sh
       timeout: 300
       runas: root
