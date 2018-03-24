@@ -13,4 +13,5 @@ echo "$(which docker)" &>> /var/log/kops.log
 echo "$(docker build -t "$REPO" .)" &>> /var/log/kops.log
 echo "$(docker tag $REPO "$IMAGE_URI")" &>> /var/log/kops.log
 echo "$(docker push "$IMAGE_URI")"  &>> /var/log/kops.log
+sleep 20
 echo "$(kubectl set image deployment/website1 website1=\"$IMAGE_URI\")" &>> /var/log/kops.log
