@@ -2,13 +2,13 @@ version: 0.0
 os: linux
 files:
   - source: /src
-    destination: /opt/k8s/codedeploy/scripts/src
+    destination: /opt/codedeploy-agent/src
   - source: /scripts
-    destination: /opt/k8s/codedeploy/scripts
-  - source: /Dockerfile
-    destination: /opt/k8s/codedeploy/scripts
+    destination: /opt/codedeploy-agent/
+  - source: Dockerfile
+    destination: /opt/codedeploy-agent/
 permissions:
-  - object: /opt/k8s/codedeploy/scripts
+  - object: /opt/codedeploy-agent/
     pattern: "*.sh"
     owner: root
     group: root
@@ -17,6 +17,6 @@ permissions:
       - file
 hooks:
    AfterInstall:
-    - location: scripts/push_image.sh
+    - location: push_image.sh
       timeout: 300
       runas: root
