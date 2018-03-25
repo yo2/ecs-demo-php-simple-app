@@ -17,6 +17,6 @@ permissions:
       - file
 hooks:
    AfterInstall:
-    - location: push_image.sh
+    - location: build_image.sh
       timeout: 300
       runas: root
