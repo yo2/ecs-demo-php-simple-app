@@ -1,22 +1,7 @@
 version: 0.0
 os: linux
-files:
-  - source: /src
-    destination: /root/codedeploy/src
-  - source: /scripts
-    destination: /root/codedeploy
-  - source: Dockerfile
-    destination: /root/codedeploy
-permissions:
-  - object: /root/codedeploy
-    pattern: "*.sh"
-    owner: root
-    group: root
-    mode: 755
-    type:
-      - file
 hooks:
    AfterInstall:
-    - location: build_image.sh
+    - location: scripts/redeploy.sh
       timeout: 300
       runas: root
