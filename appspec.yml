@@ -2,13 +2,13 @@ version: 0.0
 os: linux
 files:
   - source: /src
-    destination: /root/src
+    destination: /root/codedeploy/src
   - source: /scripts
-    destination: /root
+    destination: /root/codedeploy
   - source: Dockerfile
-    destination: /root
+    destination: /root/codedeploy
 permissions:
-  - object: /root
+  - object: /root/codedeploy
     pattern: "*.sh"
     owner: root
     group: root
