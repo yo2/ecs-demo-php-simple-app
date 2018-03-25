@@ -2,13 +2,13 @@ version: 0.0
 os: linux
 files:
   - source: /src
-    destination: /opt/codedeploy-agent/src
+    destination: /root/src
   - source: /scripts
-    destination: /opt/codedeploy-agent/
+    destination: /root
   - source: Dockerfile
-    destination: /opt/codedeploy-agent/
+    destination: /root
 permissions:
-  - object: /opt/codedeploy-agent/
+  - object: /root
     pattern: "*.sh"
     owner: root
     group: root
