@@ -18,7 +18,7 @@
                 <h1>PolarSeven AWS Kubernetes CI/CD Pipeline Demo</h1>
                 <h2>Congratulations</h2>
                 <h2>THIS IS VERSION 1.4</h2>
-                <p>Your PHP application is now running on a container in Amazon ECS.</p>
+                <p>Your PHP application is now running on a container in AWS.</p>
                 <p>The container is running PHP version <?php echo phpversion(); ?>.</p>
                 <?php
                         $myfile = fopen("/var/www/my-vol/date", "r") or die("");
